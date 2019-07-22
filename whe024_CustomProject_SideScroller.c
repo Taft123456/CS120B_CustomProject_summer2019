@@ -562,7 +562,7 @@ int Shooting_tick(int Shooting_state)
 	}
 	if (condition == 0) {
 		if (victory == 0 && failure == 0) {
-			LCD_DisplayString(1, "Side Scroller!");
+			LCD_DisplayString(1, "Scroller: Mario");
 			LCD_Cursor(17);
 			LCD_WriteData(0);
 			LCD_Cursor(32);
@@ -620,7 +620,7 @@ int Result_tick(int Score_Result_state)
 				if (score > EEPROM_read(0)) {
 					EEPROM_write(0, score);
 				}
-				LCD_DisplayString(1, "    You win!       Score: ");
+				LCD_DisplayString(1, "     Win!          Score: ");
 				LCD_WriteData(score + '0');
 				LCD_Cursor(0);
 			}
