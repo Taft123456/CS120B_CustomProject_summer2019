@@ -987,17 +987,14 @@ int Result_tick(int Score_Result_state)
 				condition = 0;
 				if(lower_area[16] == 5)
 				{
-					PORTB = 0x04;
 					score++;
 				}
 				if(lower_area[30] == 5)
 				{
-					PORTB = 0x02;
 					score++;
 				}
 				if(lower_area[44] == 5)
 				{
-					PORTB = 0x01;
 					score++;
 				}
 				if (score > EEPROM_read(0))
